@@ -1,0 +1,26 @@
+.login {
+  max-width: 35rem;
+  margin: 0 auto 0 auto;
+  padding: 0 2.5rem 0 2.5rem;
+  text-align: left;
+}
+
+.login .btn{
+  width: 100%;
+}
+
+
+input[type=checkbox], label[for=remember] {
+  display: inline;
+  width: auto;
+}
+
+.remember-forgot {
+  position: relative;
+}
+
+.remember-forgot a {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

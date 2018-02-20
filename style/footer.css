@@ -1,0 +1,40 @@
+footer {
+  padding: 3rem 0 2rem 0;
+  text-align: center;
+  background-color: #555555;
+  color: white;
+  margin-top: 2rem;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  letter-spacing: 0.2rem;
+  word-spacing: 0.5rem;
+}
+
+footer span {
+
+}
+
+footer .links{
+  display: flex;
+  max-width: 900px;
+  margin: 3rem auto 0rem auto;
+}
+
+footer .links * {
+  flex-grow: 1;
+}
+
+footer h2 {
+  font-size: 1.6rem;
+  display: inline;
+}
+
+footer ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 2rem auto;
+}
+
+footer li {
+  margin: 0 auto;
+}

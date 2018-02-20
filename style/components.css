@@ -1,0 +1,33 @@
+.profile-info {
+  display: flex;
+  /*
+  min-height: 80px;
+  */
+}
+
+.profile-info img {
+  width: 40%;
+  height: 100%;
+}
+
+.profile-info ul {
+  width: 60%;
+  /*
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+  background: white;
+  border: 2px solid #2c3e50;
+  */
+  /*
+  display: inline-block;
+  text-align: left;
+  line-height: 1.5em;
+
+  */
+  padding: 0 1.5rem;
+}
+
+.profile-info span {
+  font-weight: 600;
+}

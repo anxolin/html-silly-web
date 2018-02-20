@@ -1,0 +1,51 @@
+ul.anchor-list {
+  padding: 4rem 0 0 0;
+}
+
+ul.anchor-list li {
+  list-style: none;
+}
+
+ul.anchor-list a {
+  text-decoration: none;
+  display: block;
+  padding: 1.5rem 3rem;
+  border-top: 1px solid rgba(244, 244, 244, 1);
+  color: #2c3e50;
+  transition: all .2s ease-in-out;
+}
+
+ul.anchor-list a:hover {
+  background-color: rgba(244, 244, 244, 0.5);
+}
+
+ul.anchor-list h2 {
+  margin: 1rem 0.5rem 0.5rem 0.5rem;
+  line-height: 4rem;
+}
+
+ul.anchor-list h2::after {
+    transition: all .2s ease-in-out;
+    background-color: #c61c08;
+    content: '';
+    display: block;
+    height: 3px;
+    width: 5rem;
+}
+
+ul.anchor-list li:hover h2::after {
+    background-color: #c61c08;
+    width: 10rem;
+}
+
+
+ul.anchor-list .read-more {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  color: gray;
+  display: block;
+}
+
+ul.anchor-list .read-more::before {
+  margin: 0 1rem 0 3rem;
+}

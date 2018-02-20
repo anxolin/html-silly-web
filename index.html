@@ -1,0 +1,298 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Silly Web</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
+  <link rel="icon" href="img/silly_logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <!-- Normalize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+
+  <!-- Main css-->
+  <link rel="stylesheet" href="main.css?v=1.0">
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="logo">
+      <span>Silly Web</span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <button id="signin-btn" class="btn primary">Sign in</button>
+  </header>
+
+  <div class="main_and_aside">
+    <main>
+      <section class="banner">
+        <div class="content">
+          <p class="subtitle">A silly web just for bootstraping projects</p>
+          <h1>Silly Web</h1>
+          <!-- TODO: Picturefill -->
+          <p>
+            This template is intended to serve as a basic starting template for HTML5 web pages.
+          </p>
+
+          <div class="spaced">
+            <a href="about.html" class="btn primary huge">About me</a>
+            <a href="javascript:alert('No avaliable yet, sorry :)')" class="btn secondary huge">Download it</a>
+          </div>
+        </div>
+        <!-- end of .content -->
+      </section>
+
+      <section class="content">
+        <p class="subtitle">Are you interested in fruits?</p>
+        <h1>Articles about fruits</h1>
+
+        <div class="articles">
+          <article>
+            <h1>Why HTML5 rocks!</h1>
+            <time datetime="2017-11-26">26/11/2017</time>
+            <h2>by anxo</h2>
+            <img src="img/gallery/apples_thumb@2.jpg" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Cras in lectus eget odio venenatis vulputate eget eu lacus.
+              Morbi lobortis augue ac rutrum blandit. In quis nulla venenatis,
+              convallis dolor a, hendrerit ex. Suspendisse potenti. Nunc sodales arcu
+              facilisis justo efficitur vehicula.
+            </p>
+          </article>
+
+          <article>
+            <h1>Learn some CSS3!</h1>
+            <time datetime="2017-11-20">20/11/2017</time>
+            <h2>by anxo</h2>
+            <img src="img/gallery/bananas_thumb@2.jpg" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Cras in lectus eget odio venenatis vulputate eget eu lacus.
+              Morbi lobortis augue ac rutrum blandit. In quis nulla venenatis, convallis dolor a, hendrerit ex. Suspendisse potenti. Nunc sodales arcu facilisis justo efficitur vehicula. Donec non velit accumsan, tincidunt arcu ac, suscipit enim. Sed id quam ex. Morbi id eros convallis, finibus felis eget, euismod tortor. Phasellus sollicitudin eros eget sem porttitor lobortis.
+              Curabitur ex leo, aliquam at lacus nec, finibus rhoncus eros.
+            </p>
+          </article>
+
+          <article>
+            <h1>The box model in CSS</h1>
+            <time datetime="2017-11-12">12/11/2017</time>
+            <h2>by ilda</h2>
+            <img src="img/gallery/berries_thumb@2.jpg" />
+            <p>
+              Curabitur ex leo, aliquam at lacus nec, finibus rhoncus eros.
+              Morbi dictum rutrum turpis, at volutpat diam.
+              Quisque massa tortor, gravida vel eros quis, egestas facilisis ex.
+            </p>
+          </article>
+
+          <article>
+            <h1>CSS Specificity</h1>
+            <time datetime="2017-11-02">02/11/2017</time>
+            <h2>by anxo</h2>
+            <img src="img/gallery/fruit-baskets_thumb@2.jpg" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Cras in lectus eget odio venenatis vulputate eget eu lacus.
+                 Morbi lobortis augue ac rutrum blandit. In quis nulla venenatis,
+                 convallis dolor a, hendrerit ex. Suspendisse potenti.
+                 Nunc sodales arcu facilisis justo efficitur vehicula.
+                 Mauris gravida tellus nec hendrerit tincidunt.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="content jumbotron">
+        <p class="subtitle">Because pictures are better than articles...</p>
+
+        <a href="gallery.html" class="btn primary huge">Fruit gallery</a>
+      </section>
+
+      <section>
+        <div class="content">
+          <p class="subtitle">Access more content by signing in</p>
+          <h2>Login Form</h2>
+          <div class="login">
+            <form>
+              <label for="email">E-mail</label>
+              <input id="email" type="email" placeholder="bob@example.com"></input>
+              <label for="password">Password</label>
+              <input id="password" type="password"></input>
+              <input type="button" class="btn primary big" value="Sign in"/>
+              <div class="remember-forgot">
+                <input id="remember" type="checkbox" name="remember" />
+                <label for="remember">Stay signed in</label>
+                <a href="#forgot-password">¿Need help?</a>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- end of .content -->
+      </section>
+
+      <section class="content">
+        <p class="subtitle">We offer you a big deal</p>
+        <h2>Check out our services</h2>
+        <ul class="anchor-list">
+          <li>
+            <a href="404.html">
+              <h2>squeeze service</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra dictum nulla quis euismod. Suspendisse ac volutpat enim. Ut commodo venenatis blandit
+              </p>
+              <i class="read-more fa fa-plus-square-o" aria-hidden="true">Read more</i>
+            </a>
+          </li>
+          <li>
+            <a href="404.html">
+              <h2>Fruit delivery</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra dictum nulla quis euismod. Suspendisse ac volutpat enim. Ut commodo venenatis blandit
+              </p>
+              <i class="read-more fa fa-plus-square-o" aria-hidden="true">Read more</i>
+            </a>
+          </li>
+          <li>
+            <a href="404.html">
+              <h2>Rotten diagnosis</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra dictum nulla quis euismod. Suspendisse ac volutpat enim. Ut commodo venenatis blandit
+              </p>
+              <i class="read-more fa fa-plus-square-o" aria-hidden="true">Read more</i>
+            </a>
+          </li>
+          <li>
+            <a href="404.html">
+              <h2>Seed remnoval</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam pharetra dictum nulla quis euismod. Suspendisse ac volutpat enim. Ut commodo venenatis blandit
+              </p>
+              <i class="read-more fa fa-plus-square-o" aria-hidden="true">Read more</i>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section class="content">
+        <p class="subtitle">Because this web doen't make any sense</p>
+        <h1>More random stuff</h1>
+
+        <div class="articles articles--side-image">
+          <article>
+            <img src="img/gallery/bananas_thumb@2.jpg" />
+            <div>
+              <h1>Are you a banana guy!</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </article>
+
+          <article>
+            <img src="img/gallery/berries_thumb@2.jpg" />
+            <div>
+              <h1>Berry christmas!</h1>
+              <p>Curabitur ex leo, aliquam at lacus nec, finibus rhoncus eros.</p>
+            </div>
+          </article>
+
+          <article>
+            <img src="img/gallery/apples_thumb@2.jpg" />
+            <div>
+              <h1>Apple vs Samsung</h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+          </article>
+        </div>
+        <!-- end of .articles -->
+      </section>
+
+
+    </main>
+
+    <!--
+    <aside>
+      <section>
+        <div class="content">
+          <h1>About me</h1>
+          <div class="profile-info">
+            <img src="https://www.gravatar.com/avatar/d49c46ca3bdfeb5e1cb3038d481e2c64?s=160" alt="anxo's avatar">
+            <ul>
+              <li><span>Angel Rodriguez</span></li>
+              <li><a href="mailto:anxolin@gmail.com">anxolin@gmail.com</a></li>
+              <li><a href="https://github.com/anxolin">Github: anxolin</a></li>
+            </ul>
+          </div>
+        </div>
+        <!- - end of .content - ->
+      </section>
+
+      <section>
+        <div class="content">
+          <h1>Subscribe to our newsletter</h1>
+          <label for="subscribe-mail">Mail address:</label>
+          <input id="subscribe-email" name="subscribe-mail" type="email" placeholder="bob@example.com"></input>
+          <input type="submit" class="btn secondary small" value="Subscribe me!" />
+        </div>
+        <!- - end of .content - ->
+      </section>
+    </aside>
+    -->
+  </div>
+
+  <footer>
+    <div class="content">
+      <span>© Angel Rodriguez 2017</span>
+      <div class="links">
+        <section>
+          <h2>My links 1</h2>
+          <ul>
+            <li>AAAA</li>
+            <li>BBBB</li>
+            <li>CCCC</li>
+            <li>DDDD</li>
+          </ul>
+        </section>
+        <section>
+          <h2>My links 2</h2>
+          <ul>
+            <li>AAAA</li>
+            <li>BBBB</li>
+            <li>CCCC</li>
+            <li>DDDD</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Social</h2>
+          <ul>
+            <li>AAAA</li>
+            <li>BBBB</li>
+            <li>CCCC</li>
+            <li>DDDD</li>
+          </ul>
+        </section>
+      </div>
+      <!-- end of .links -->
+    </div>
+    <!-- end of .content -->
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>

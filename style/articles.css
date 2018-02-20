@@ -1,0 +1,121 @@
+/*
+section h2 {
+  font-size: 0.75rem;
+  position: relative;
+  left: -5rem;
+  top: 0.5rem;
+  padding-left: 5.5rem;
+}
+*/
+
+.articles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+article {
+  box-sizing: border-box;
+  display: inline-block;
+  position: relative;
+  padding: 1.5rem 0.75rem;
+
+  /*
+  margin: 0 1.5rem;
+  */
+
+  line-height: 3rem;
+  text-align: left;
+}
+
+article h1 {
+  font-size: 2rem;
+  margin-bottom: 3.5rem;
+}
+
+article time, article h2 {
+  position: absolute;
+  font-size: 1.4rem;
+  display: inline;
+}
+
+article time {
+  top: 0;
+  right: 0;
+}
+
+article h2 {
+  top: 1rem;
+  right: 0;
+}
+
+article {
+  /* display: inline; */
+  /* width: 50rem; */
+}
+
+article p {
+  font-size: 1.6rem;
+}
+
+article p:first-letter {
+  font-size: 3rem;
+}
+
+.articles--side-image article {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 0;
+}
+
+.articles--side-image h1 {
+  margin: 0 0.5rem
+}
+
+.articles--side-image img {
+  box-sizing: border-box;
+  width: 30%;
+  height: auto;
+  border-radius: 100%;
+  box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+.articles--side-image div {
+  box-sizing: border-box;
+  width: 70%;
+  display: inline-block;
+  padding: 0 1rem;
+
+  /*
+
+  box-sizing: border-box;
+  display: inline-block;
+  */
+}
+
+
+
+/*
+article h2:before{
+  content: '\270D';
+  position: absolute;
+  top: -0.6rem;
+  left: -2rem;
+  font-size: 2rem;
+}
+*/
+
+
+/* --------   Media queries   -------- */
+@media screen and (min-width: 720px) {
+  article {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  article {
+    width: 33.33333%;
+  }
+}

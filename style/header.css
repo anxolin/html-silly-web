@@ -1,0 +1,76 @@
+header {
+  /*
+  position: fixed;
+  background: hsla(0, 0%, 98%, 0.92);
+  z-index: 10;
+  width: 100%;
+  */
+}
+
+header a {
+  text-decoration: none;
+  color: #2c3e50;
+}
+
+/* login button
+    - font: 1.7rem = 17px
+    - width: 8rem = 8*17 = 136px
+*/
+header #signin-btn {
+  display: none;
+  width: 8em;
+  position: absolute;
+  top: 0px;
+  right: 40px;
+}
+
+header .logo {
+  background: url(../img/silly_logo_sprite.png) no-repeat;
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  height: 64px;
+  width: 64px;
+  /* text-indent: -9999px; */
+}
+
+header .logo:hover {
+  text-shadow: 0 0 10px #ecff23;
+  background-position: 0 -64px;
+}
+
+header .logo span {
+  display: none;
+  position: absolute;
+  top: 18px; /*  */
+  left: 80px; /*  */
+  transform: rotate(-5deg) scale(1.1);
+  white-space: nowrap;
+  font-size: 16pt; /* 22 */
+}
+
+header, aside section, .box, .shadowed {
+  box-shadow:
+    0 2px 4px 0 rgba(0, 0, 0, 0.1), /* 1,9  */
+    0 3px 5px 0 rgba(0, 0, 0, 0.03); /* 0,57 */
+}
+
+
+header h1 {
+  /* display: inline; */
+  margin: 0;
+}
+
+/* --------   Media queries   -------- */
+@media screen and (min-width: 800px) {
+  header .logo span {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  header #signin-btn {
+    display: block;
+  }
+}

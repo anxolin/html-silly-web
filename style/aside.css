@@ -1,0 +1,63 @@
+aside {
+  display: none;
+}
+
+
+aside h1 {
+  font-size: 2rem;
+  margin: 0rem 0 2rem 0;
+}
+
+aside ul {
+  list-style-type: none;
+}
+
+aside section, .box{
+  background: #f9f9f9;
+  border-radius: 0 0 15px 15px;
+}
+
+aside section {
+  margin-bottom: 2.5rem;
+  padding: 2rem 2rem 1rem 2rem;
+  box-sizing: border-box;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+aside label{
+  font-size: 1.6rem;
+}
+
+aside input {
+  font-size: 1.6rem;
+  margin: 0 auto 1rem auto;
+}
+
+aside .btn{
+  margin: 1rem 0;
+}
+
+
+
+/* --------   Media queries   -------- */
+@media screen and (min-width: 820px) {
+  aside {
+    /*
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    */
+    margin: 10rem 0 0 0;
+    display: block;
+
+    /*  TODO: Try to make it more flowable */
+    width: 42%;
+  }
+  /*
+  main {
+    padding-right: 30rem;
+  }
+  */
+}

@@ -1,0 +1,111 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Silly Web</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <!--[if IE]><link rel="shortcut icon" href="favicon.ico"><![endif]-->
+  <link rel="icon" href="img/silly_logo.png">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <!-- Normalize -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+  <!-- Fontawesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+
+  <!-- Main css-->
+  <link rel="stylesheet" href="main.css?v=1.0">
+</head>
+
+<body>
+  <header>
+    <a href="index.html" class="logo">
+      <span>Silly Web</span>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="products.html">Products</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <button id="signin-btn" class="btn primary">Sign in</button>
+  </header>
+  <main>
+    <section class="container jumbotron">
+      <h2>Gallery</h2>
+      <p>
+        Check out all these fruity pictures
+      </p>
+    </section>
+
+    <section class="content">
+      <h3>My gallery</h3>
+      <ul class="gallery">
+      </ul>
+    </section>
+
+  </main>
+  <footer>
+    © Angel Rodriguez 2017
+  </footer>
+  <script>
+  (function (){
+    const images = [
+      'apples', 'bananas', 'beer-taps', 'berries', 'candy-2', 'candy',
+      'cheers', 'clementines', 'edamame', 'fruit-baskets', 'pears-2',
+      'pears', 'pouring-water', 'snacks-2', 'snacks', 'water-2',
+      'water', 'wine-2', 'wine'
+    ]
+    const gallery = document.getElementsByClassName('gallery')[0]
+
+    function createLi (imageName) {
+      const image = document.createElement('img')
+      image.src = `img/gallery/${imageName}_thumb.jpg`
+
+      const figcaption = document.createElement('figcaption')
+      figcaption.innerHTML = 'Loremp impsum caption'
+
+      const figure = document.createElement('figure')
+      figure.appendChild(image)
+      figure.appendChild(figcaption)
+
+      const link = document.createElement('a')
+      link.href = '404.html'
+      link.appendChild(figure)
+
+      const li = document.createElement('li')
+      li.appendChild(link)
+
+      return li
+    }
+
+    function addFocusOnOver(li) {
+      li.addEventListener('mouseenter', function() {
+        li.classList.add('focus')
+      })
+
+      li.addEventListener('mouseleave', function() {
+        li.classList.remove('focus')
+      })
+    }
+
+    images.forEach(imageName => {
+      const li = createLi(imageName)
+      addFocusOnOver(li)
+      gallery.appendChild(li)
+    })
+  }())
+  </script>
+  <script src="main.js"></script>
+</body>
+</html>

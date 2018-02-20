@@ -1,0 +1,42 @@
+ul.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.gallery li {
+  margin: 0.2rem 0.5rem;
+  flex-grow: 1;
+}
+
+ul.gallery figure {
+  position: relative;
+  margin: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+}
+
+ul.gallery figcaption {
+  position: absolute;
+  bottom: 3px; /* TODO: I dont understand why this is not 0. It makes the figcaption bigger than the image...  */
+  display: none;
+  box-sizing: border-box;
+  width: 100%;
+  background: hsla(0, 0%, 0%, 0.5);
+  color: white;
+  padding: 1rem 1.5rem;
+  text-align: center;
+}
+
+ul.gallery li.focus figcaption{
+  display: block;
+}
+
+ul.gallery img {
+  width: 100%;
+  height: 100%;
+}
